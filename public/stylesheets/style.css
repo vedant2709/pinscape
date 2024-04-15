@@ -1,0 +1,31 @@
+@font-face {
+  font-family: gilroy-regular;
+  src: url(Gilroy-Regular.ttf);
+}
+@font-face {
+  font-family: gilroy-semibold;
+  src: url(Gilroy-SemiBold.ttf);
+}
+@font-face {
+  font-family: gilroy-medium;
+  src: url(Gilroy-Medium.ttf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy-medium;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

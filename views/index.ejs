@@ -1,0 +1,17 @@
+<% include ./partials/header.ejs%>
+<div class="w-full h-screen bg-[url('https://images.unsplash.com/photo-1527769929977-c341ee9f2033?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fHNpbXBsZSUyMGFic3RyYWN0JTIwZGVzaWdufGVufDB8fDB8fHww')] bg-cover bg-center flex justify-center overflow-hidden items-center">
+  <div class="w-[28vw] min-h-[60vh] bg-white px-[50px] py-5 rounded-[30px]">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS_YKfKp0I4LcGiePRQ0p0iC_XHJFUgXsCJjmeroDdKw&s" class="h-[30px] w-[30px] object-cover mix-blend-multiply mx-auto" alt="">
+    <h1 class="text-center font-bold text-2xl pt-2">Welcome to Pinterest</h1>
+    <form action="/login" method="post">
+      <input class="block w-full px-3 py-2 mt-3 border-2 rounded-md placeholder:text-zinc-500" type="text" name="username" placeholder="username">
+      <input class="block w-full px-3 py-2 mt-3 border-2 rounded-md placeholder:text-zinc-500" type="password" name="password" placeholder="password">
+      <input class="block w-full px-3 py-1 bg-red-600 text-white rounded-full mt-3 font-semibold text-lg" type="submit" value="Login">
+      <a class="mt-2 font-semibold text-zinc-500 inline-block text-sm" href="#">Forgot Password?</a>
+      <p class="text-xs mt-3 text-zinc-600 font-semibold w-4/5 text-center mx-auto">By continuing, you agree to Pinterest's Terms of Service; Opens a new tab and acknowledge you've read our Privacy Policy; 
+      </p>
+    </form>
+    <a href="/register" class="text-zinc-700 font-semibold text-sm inline-block text-center w-full mt-3">Dont have an account?</a>
+  </div>
+</div>
+<% include ./partials/footer.ejs%> 
